@@ -10,8 +10,20 @@ The order of sub-arrays inside the main array does not matter.
 For an optimal solution, the following operation should complete within 6000ms.
 
 https://www.codewars.com/kata/555b1890a75b930e63000023/train/python
+
+for large n, use recursive generation with memoization(storing previous results) to handle rapid growth
 """
 
 def combos(n: int) -> list[list[int]]:
+    # backtracking (recursive)
+    # create function that takes a target sum and a maximum allowed value for the next part (starting at n)
+        # choose number i from n down to 1
+            # for each i, recursively find partitions for the remainder (n-1) where next number is no larger than i
+    # the total number of partitions p(n) can be found using the generating function https://en.wikipedia.org/wiki/Partition_(number_theory)#Generating_function
+    # https://en.wikipedia.org/wiki/Partition_problem
+
+
+
+
 
     return []

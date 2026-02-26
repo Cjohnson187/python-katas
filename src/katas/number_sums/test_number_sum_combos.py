@@ -5,7 +5,7 @@ from src.katas.number_sums.number_sum_combos import combos
 
 class Test(TestCase):
 
-    def do_test(self, n: int, expected: list[list[int]]):
+    def do_test(self,  n: int, expected: list[list[int]]):
         actual = combos(n)
         if not isinstance(actual, list) or not all(isinstance(x, list) for x in actual):
             assert False, f'for n = {n}, expected a list of lists, but got {repr(actual)}'
